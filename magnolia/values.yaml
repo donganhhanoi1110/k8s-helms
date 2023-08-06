@@ -42,6 +42,11 @@ magnoliaAuthor:
   enabled: false
 
 magnoliaPublic:
+  env:
+    - name: magnolia.superuser.enabled
+      value: "true"
+    - name: magnolia.superuser.password
+      value: bootstrapPwd123
   enabled: True # -- Set to false if you don't need any public instances.
   restartPolicy: Always # Always use a leading slash.
   redeploy: true
