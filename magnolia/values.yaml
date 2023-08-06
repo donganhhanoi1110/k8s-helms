@@ -213,6 +213,13 @@ ingress:
           pathType: ImplementationSpecific
           instance: public
           port: http
+    - host: mgnl-public-dev.maxxn9x.com
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+          instance: public
+          port: http       
+          
 
 postjob:
   image: registry.gitlab.com/mironet/magnolia-bootstrap
