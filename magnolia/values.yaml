@@ -192,6 +192,7 @@ metrics:
 service:
   annotations: {}
   type: NodePort
+  clusterIP: None
   ports:
     - name: http
       port: 80
