@@ -191,13 +191,13 @@ metrics:
 
 service:
   annotations: {}
-  type: ClusterIP
-  clusterIP: None
+  type: NodePort
   ports:
     - name: http
       port: 80
       protocol: TCP
-      targetPort: 8080
+      targetPort: 80
+      nodePort: 30222
   redirectPort: 8081
 
 ingress:
