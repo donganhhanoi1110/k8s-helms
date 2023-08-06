@@ -207,7 +207,7 @@ ingress:
     nginx.ingress.kubernetes.io/proxy-body-size: 50m
     # nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
   hosts:
-    - host: public-${DEPLOYMENT}.example.com
+    - host: public-dev.mgnl.com
       paths:
         - path: /
           pathType: ImplementationSpecific
