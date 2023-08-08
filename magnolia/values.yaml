@@ -212,13 +212,19 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
           instance: public
-          port: http
+          port: http                                                  
     - host: mgnl-public-dev.maxxn9x.com
       paths:
         - path: /
           pathType: ImplementationSpecific
           instance: public
-          port: http       
+          port: http
+    - host: mgnl.maxxx.dev
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+          instance: public
+          port: http             
           
 
 postjob:
